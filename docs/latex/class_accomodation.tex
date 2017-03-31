@@ -1,0 +1,329 @@
+\hypertarget{class_accomodation}{}\section{Accomodation Class Reference}
+\label{class_accomodation}\index{Accomodation@{Accomodation}}
+Inheritance diagram for Accomodation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_accomodation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_accomodation_a6f9d474e6bf2cd77d0046c3584a50bc6}{Accomodation} (float price\+\_\+night, float price\+\_\+week, float price\+\_\+month, string location, vector$<$ pair$<$ \hyperlink{class_date}{Date}, \hyperlink{class_date}{Date} $>$$>$ available\+\_\+dates)
+\begin{DoxyCompactList}\small\item\em accomodation constructor \end{DoxyCompactList}\item 
+\hyperlink{class_accomodation_a1e9a337679884eeb358e998a26c7e98b}{Accomodation} (unsigned int id, float price\+\_\+night, float price\+\_\+week, float price\+\_\+month, string location, vector$<$ pair$<$ \hyperlink{class_date}{Date}, \hyperlink{class_date}{Date} $>$$>$ available\+\_\+dates)
+\begin{DoxyCompactList}\small\item\em accomodation constructor with id \end{DoxyCompactList}\item 
+float \hyperlink{class_accomodation_a9061a7cadf76377cbab25043e53ef5ef}{get\+Price\+Night} () const
+\begin{DoxyCompactList}\small\item\em gets price\+\_\+night \end{DoxyCompactList}\item 
+float \hyperlink{class_accomodation_ab466bd7dc51b8f48ac4e9152c96c95f7}{get\+Price\+Week} () const
+\begin{DoxyCompactList}\small\item\em gets price\+\_\+week \end{DoxyCompactList}\item 
+float \hyperlink{class_accomodation_a3e58fd8b7a752fb7c8709fcb979cfbb5}{get\+Price\+Month} () const
+\begin{DoxyCompactList}\small\item\em gets price\+\_\+month \end{DoxyCompactList}\item 
+string \hyperlink{class_accomodation_a4412dad54b791d4db1ebd01176c1333e}{get\+Location} () const
+\begin{DoxyCompactList}\small\item\em gets location \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_accomodation_a04d05660220ad6ad31619bdf9bab28e9}{get\+ID} () const
+\begin{DoxyCompactList}\small\item\em gets ID \end{DoxyCompactList}\item 
+void \hyperlink{class_accomodation_a3d06b872d484b5aa2455d65d98b63645}{set\+ID} (unsigned int id)
+\begin{DoxyCompactList}\small\item\em sets ID \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_accomodation_a4394eb907b2d5a23faf73dd03c1dac4d}{save\+Accomodation} (ofstream \&out)
+\begin{DoxyCompactList}\small\item\em virtual fuction to save accomodation on the supliers file \end{DoxyCompactList}\item 
+float \hyperlink{class_accomodation_aa37ad0d3356128f880c00b647d2f2bff}{get\+Fee} ()
+\begin{DoxyCompactList}\small\item\em gets fee \end{DoxyCompactList}\item 
+void \hyperlink{class_accomodation_a9fc9164c6a0a353538e422ec36db43f4}{set\+Fee} (float fee)
+\begin{DoxyCompactList}\small\item\em sets fee \end{DoxyCompactList}\item 
+void \hyperlink{class_accomodation_aefbbf86e80b202ca4879fb695cdb7d3d}{add\+Dates} (const pair$<$ \hyperlink{class_date}{Date}, \hyperlink{class_date}{Date} $>$ \&dates)
+\begin{DoxyCompactList}\small\item\em adds dates to the vector of unavailable dates \end{DoxyCompactList}\item 
+void \hyperlink{class_accomodation_ad77bdf46460657e8670001c91bce72b3}{remove\+Dates} (\hyperlink{class_date}{Date} check\+IN, \hyperlink{class_date}{Date} check\+O\+UT)
+\begin{DoxyCompactList}\small\item\em removes dates to the vector of unavailable dates \end{DoxyCompactList}\item 
+vector$<$ pair$<$ \hyperlink{class_date}{Date}, \hyperlink{class_date}{Date} $>$ $>$ \hyperlink{class_accomodation_a63c58fd6e01101095522573579490e7b}{get\+Unavailable\+Dates} () const
+\begin{DoxyCompactList}\small\item\em gets unavailable dates \end{DoxyCompactList}\item 
+\hypertarget{class_accomodation_ac38668edd6b7cd608dc9e8ab9a780efb}{}\label{class_accomodation_ac38668edd6b7cd608dc9e8ab9a780efb} 
+virtual void \hyperlink{class_accomodation_ac38668edd6b7cd608dc9e8ab9a780efb}{print} () const
+\begin{DoxyCompactList}\small\item\em virtual fuction to print a accomodation on the screen \end{DoxyCompactList}\item 
+bool \hyperlink{class_accomodation_ae42299afc3f8bf211fe69821f876d48a}{operator==} (const \hyperlink{class_accomodation}{Accomodation} \&acc) const
+\begin{DoxyCompactList}\small\item\em overload of the the equality operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int \hyperlink{class_accomodation_a2ceca7929ed995f3fdc40e3d6b7e017c}{get\+Last\+ID} ()
+\begin{DoxyCompactList}\small\item\em gets last\+ID \end{DoxyCompactList}\item 
+static void \hyperlink{class_accomodation_a5554cdc8b46ae1fb92c94bf4696f9b77}{set\+Acc\+Last\+ID} (unsigned int id)
+\begin{DoxyCompactList}\small\item\em sets accomomodation last id \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_accomodation_a6f9d474e6bf2cd77d0046c3584a50bc6}{}\label{class_accomodation_a6f9d474e6bf2cd77d0046c3584a50bc6} 
+\index{Accomodation@{Accomodation}!Accomodation@{Accomodation}}
+\index{Accomodation@{Accomodation}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{Accomodation()}{Accomodation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Accomodation\+::\+Accomodation (\begin{DoxyParamCaption}\item[{float}]{price\+\_\+night,  }\item[{float}]{price\+\_\+week,  }\item[{float}]{price\+\_\+month,  }\item[{string}]{location,  }\item[{vector$<$ pair$<$ \hyperlink{class_date}{Date}, \hyperlink{class_date}{Date} $>$$>$}]{available\+\_\+dates }\end{DoxyParamCaption})}
+
+
+
+accomodation constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em price\+\_\+night} & \\
+\hline
+{\em price\+\_\+week} & \\
+\hline
+{\em price\+\_\+month} & \\
+\hline
+{\em location} & \\
+\hline
+{\em unavailable\+\_\+dates} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_accomodation_a1e9a337679884eeb358e998a26c7e98b}{}\label{class_accomodation_a1e9a337679884eeb358e998a26c7e98b} 
+\index{Accomodation@{Accomodation}!Accomodation@{Accomodation}}
+\index{Accomodation@{Accomodation}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{Accomodation()}{Accomodation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Accomodation\+::\+Accomodation (\begin{DoxyParamCaption}\item[{unsigned int}]{id,  }\item[{float}]{price\+\_\+night,  }\item[{float}]{price\+\_\+week,  }\item[{float}]{price\+\_\+month,  }\item[{string}]{location,  }\item[{vector$<$ pair$<$ \hyperlink{class_date}{Date}, \hyperlink{class_date}{Date} $>$$>$}]{available\+\_\+dates }\end{DoxyParamCaption})}
+
+
+
+accomodation constructor with id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em price\+\_\+night} & \\
+\hline
+{\em price\+\_\+week} & \\
+\hline
+{\em price\+\_\+month} & \\
+\hline
+{\em location} & \\
+\hline
+{\em unavailable\+\_\+dates} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_accomodation_aefbbf86e80b202ca4879fb695cdb7d3d}{}\label{class_accomodation_aefbbf86e80b202ca4879fb695cdb7d3d} 
+\index{Accomodation@{Accomodation}!add\+Dates@{add\+Dates}}
+\index{add\+Dates@{add\+Dates}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{add\+Dates()}{addDates()}}
+{\footnotesize\ttfamily void Accomodation\+::add\+Dates (\begin{DoxyParamCaption}\item[{const pair$<$ \hyperlink{class_date}{Date}, \hyperlink{class_date}{Date} $>$ \&}]{dates }\end{DoxyParamCaption})}
+
+
+
+adds dates to the vector of unavailable dates 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dates} & pair of dates(initial and final) \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_accomodation_aa37ad0d3356128f880c00b647d2f2bff}{}\label{class_accomodation_aa37ad0d3356128f880c00b647d2f2bff} 
+\index{Accomodation@{Accomodation}!get\+Fee@{get\+Fee}}
+\index{get\+Fee@{get\+Fee}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{get\+Fee()}{getFee()}}
+{\footnotesize\ttfamily float Accomodation\+::get\+Fee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets fee 
+
+\begin{DoxyReturn}{Returns}
+fee that supliers pay for each reservations 
+\end{DoxyReturn}
+\hypertarget{class_accomodation_a04d05660220ad6ad31619bdf9bab28e9}{}\label{class_accomodation_a04d05660220ad6ad31619bdf9bab28e9} 
+\index{Accomodation@{Accomodation}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily unsigned int Accomodation\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets ID 
+
+\begin{DoxyReturn}{Returns}
+ID 
+\end{DoxyReturn}
+\hypertarget{class_accomodation_a2ceca7929ed995f3fdc40e3d6b7e017c}{}\label{class_accomodation_a2ceca7929ed995f3fdc40e3d6b7e017c} 
+\index{Accomodation@{Accomodation}!get\+Last\+ID@{get\+Last\+ID}}
+\index{get\+Last\+ID@{get\+Last\+ID}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{get\+Last\+I\+D()}{getLastID()}}
+{\footnotesize\ttfamily static unsigned int Accomodation\+::get\+Last\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+gets last\+ID 
+
+\begin{DoxyReturn}{Returns}
+last\+ID 
+\end{DoxyReturn}
+\hypertarget{class_accomodation_a4412dad54b791d4db1ebd01176c1333e}{}\label{class_accomodation_a4412dad54b791d4db1ebd01176c1333e} 
+\index{Accomodation@{Accomodation}!get\+Location@{get\+Location}}
+\index{get\+Location@{get\+Location}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{get\+Location()}{getLocation()}}
+{\footnotesize\ttfamily string Accomodation\+::get\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets location 
+
+\begin{DoxyReturn}{Returns}
+location 
+\end{DoxyReturn}
+\hypertarget{class_accomodation_a3e58fd8b7a752fb7c8709fcb979cfbb5}{}\label{class_accomodation_a3e58fd8b7a752fb7c8709fcb979cfbb5} 
+\index{Accomodation@{Accomodation}!get\+Price\+Month@{get\+Price\+Month}}
+\index{get\+Price\+Month@{get\+Price\+Month}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{get\+Price\+Month()}{getPriceMonth()}}
+{\footnotesize\ttfamily float Accomodation\+::get\+Price\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets price\+\_\+month 
+
+\begin{DoxyReturn}{Returns}
+price\+\_\+month 
+\end{DoxyReturn}
+\hypertarget{class_accomodation_a9061a7cadf76377cbab25043e53ef5ef}{}\label{class_accomodation_a9061a7cadf76377cbab25043e53ef5ef} 
+\index{Accomodation@{Accomodation}!get\+Price\+Night@{get\+Price\+Night}}
+\index{get\+Price\+Night@{get\+Price\+Night}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{get\+Price\+Night()}{getPriceNight()}}
+{\footnotesize\ttfamily float Accomodation\+::get\+Price\+Night (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets price\+\_\+night 
+
+\begin{DoxyReturn}{Returns}
+price\+\_\+night 
+\end{DoxyReturn}
+\hypertarget{class_accomodation_ab466bd7dc51b8f48ac4e9152c96c95f7}{}\label{class_accomodation_ab466bd7dc51b8f48ac4e9152c96c95f7} 
+\index{Accomodation@{Accomodation}!get\+Price\+Week@{get\+Price\+Week}}
+\index{get\+Price\+Week@{get\+Price\+Week}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{get\+Price\+Week()}{getPriceWeek()}}
+{\footnotesize\ttfamily float Accomodation\+::get\+Price\+Week (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets price\+\_\+week 
+
+\begin{DoxyReturn}{Returns}
+price\+\_\+week 
+\end{DoxyReturn}
+\hypertarget{class_accomodation_a63c58fd6e01101095522573579490e7b}{}\label{class_accomodation_a63c58fd6e01101095522573579490e7b} 
+\index{Accomodation@{Accomodation}!get\+Unavailable\+Dates@{get\+Unavailable\+Dates}}
+\index{get\+Unavailable\+Dates@{get\+Unavailable\+Dates}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{get\+Unavailable\+Dates()}{getUnavailableDates()}}
+{\footnotesize\ttfamily vector$<$pair$<$\hyperlink{class_date}{Date}, \hyperlink{class_date}{Date}$>$ $>$ Accomodation\+::get\+Unavailable\+Dates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets unavailable dates 
+
+\begin{DoxyReturn}{Returns}
+unavailable dates 
+\end{DoxyReturn}
+\hypertarget{class_accomodation_ae42299afc3f8bf211fe69821f876d48a}{}\label{class_accomodation_ae42299afc3f8bf211fe69821f876d48a} 
+\index{Accomodation@{Accomodation}!operator==@{operator==}}
+\index{operator==@{operator==}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Accomodation\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_accomodation}{Accomodation} \&}]{acc }\end{DoxyParamCaption}) const}
+
+
+
+overload of the the equality operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em acc} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true is accomodations have the same id, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_accomodation_ad77bdf46460657e8670001c91bce72b3}{}\label{class_accomodation_ad77bdf46460657e8670001c91bce72b3} 
+\index{Accomodation@{Accomodation}!remove\+Dates@{remove\+Dates}}
+\index{remove\+Dates@{remove\+Dates}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{remove\+Dates()}{removeDates()}}
+{\footnotesize\ttfamily void Accomodation\+::remove\+Dates (\begin{DoxyParamCaption}\item[{\hyperlink{class_date}{Date}}]{check\+IN,  }\item[{\hyperlink{class_date}{Date}}]{check\+O\+UT }\end{DoxyParamCaption})}
+
+
+
+removes dates to the vector of unavailable dates 
+
+
+\begin{DoxyParams}{Parameters}
+{\em check\+IN} & \\
+\hline
+{\em check\+O\+UT} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_accomodation_a4394eb907b2d5a23faf73dd03c1dac4d}{}\label{class_accomodation_a4394eb907b2d5a23faf73dd03c1dac4d} 
+\index{Accomodation@{Accomodation}!save\+Accomodation@{save\+Accomodation}}
+\index{save\+Accomodation@{save\+Accomodation}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{save\+Accomodation()}{saveAccomodation()}}
+{\footnotesize\ttfamily void Accomodation\+::save\+Accomodation (\begin{DoxyParamCaption}\item[{ofstream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual fuction to save accomodation on the supliers file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & file supliers \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_apartment_af30f7fa6ee2877315b553614dcfad9f2}{Apartment}, \hyperlink{class_flat_a9569fe297d02edebfe67d62125a86696}{Flat}, and \hyperlink{class_bedroom_ad5d0a12fe0257ba5c14efc6182ee33ce}{Bedroom}.
+
+\hypertarget{class_accomodation_a5554cdc8b46ae1fb92c94bf4696f9b77}{}\label{class_accomodation_a5554cdc8b46ae1fb92c94bf4696f9b77} 
+\index{Accomodation@{Accomodation}!set\+Acc\+Last\+ID@{set\+Acc\+Last\+ID}}
+\index{set\+Acc\+Last\+ID@{set\+Acc\+Last\+ID}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{set\+Acc\+Last\+I\+D()}{setAccLastID()}}
+{\footnotesize\ttfamily void Accomodation\+::set\+Acc\+Last\+ID (\begin{DoxyParamCaption}\item[{unsigned int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+sets accomomodation last id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_accomodation_a9fc9164c6a0a353538e422ec36db43f4}{}\label{class_accomodation_a9fc9164c6a0a353538e422ec36db43f4} 
+\index{Accomodation@{Accomodation}!set\+Fee@{set\+Fee}}
+\index{set\+Fee@{set\+Fee}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{set\+Fee()}{setFee()}}
+{\footnotesize\ttfamily void Accomodation\+::set\+Fee (\begin{DoxyParamCaption}\item[{float}]{fee }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets fee 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fee} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_accomodation_a3d06b872d484b5aa2455d65d98b63645}{}\label{class_accomodation_a3d06b872d484b5aa2455d65d98b63645} 
+\index{Accomodation@{Accomodation}!set\+ID@{set\+ID}}
+\index{set\+ID@{set\+ID}!Accomodation@{Accomodation}}
+\subsubsection{\texorpdfstring{set\+I\+D()}{setID()}}
+{\footnotesize\ttfamily void Accomodation\+::set\+ID (\begin{DoxyParamCaption}\item[{unsigned int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Accomodation.\+h\item 
+Accomodation.\+cpp\end{DoxyCompactItemize}

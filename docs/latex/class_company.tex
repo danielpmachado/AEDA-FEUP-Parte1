@@ -1,0 +1,214 @@
+\hypertarget{class_company}{}\section{Company Class Reference}
+\label{class_company}\index{Company@{Company}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_company_a50772131ed5edbbcb73bf58dfec71c72}{Company} (string clients\+File, string supliers\+File, string reservations\+File)
+\begin{DoxyCompactList}\small\item\em constructor for the \hyperlink{class_company}{Company} based on the files provided \end{DoxyCompactList}\item 
+void \hyperlink{class_company_a5a3e5d5ef3ef991c54de2781d0607c19}{supliers\+Inicialization} (string supliers\+File)
+\begin{DoxyCompactList}\small\item\em initializes the vector supliers \end{DoxyCompactList}\item 
+void \hyperlink{class_company_a79bf900155922f7d8b8b1f248dcc3313}{reservations\+Inicialization} (string reservations\+File)
+\begin{DoxyCompactList}\small\item\em initializes the vector reservations and updates the reservations of each suplier \end{DoxyCompactList}\item 
+void \hyperlink{class_company_ae2767e861cbe5ddec7111c2d04878c9f}{clients\+Inicialization} (string clients\+File)
+\begin{DoxyCompactList}\small\item\em initializes the vector of clients \end{DoxyCompactList}\item 
+\hypertarget{class_company_af124ca1bb17d8450ab129a33a5f8d4be}{}\label{class_company_af124ca1bb17d8450ab129a33a5f8d4be} 
+void \hyperlink{class_company_af124ca1bb17d8450ab129a33a5f8d4be}{register\+Suplier} ()
+\begin{DoxyCompactList}\small\item\em handles the registantion of a suplier \end{DoxyCompactList}\item 
+\hypertarget{class_company_a402904c6651146a9ca6023e72bd6c8fc}{}\label{class_company_a402904c6651146a9ca6023e72bd6c8fc} 
+void \hyperlink{class_company_a402904c6651146a9ca6023e72bd6c8fc}{register\+Client} ()
+\begin{DoxyCompactList}\small\item\em handles the registantion of a client \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_suplier}{Suplier} $>$\+::iterator \hyperlink{class_company_a9012e0fa84141868a482a0a69b6313af}{verify\+Log\+In\+Sup} (string username, string password)
+\begin{DoxyCompactList}\small\item\em verifies if the username and password of a suplier are correct \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_client}{Client} $>$\+::iterator \hyperlink{class_company_ae09dab4c6a0d26207cdeffd0d5adcf8f}{verify\+Log\+In\+Cli} (string username, string password)
+\begin{DoxyCompactList}\small\item\em verifies if the username and password of a client are correct \end{DoxyCompactList}\item 
+\hyperlink{class_accomodation}{Accomodation} $\ast$ \hyperlink{class_company_a2b6d438df8e871898eef5fc5e3e8f761}{display\+Offers} (string location, \hyperlink{class_date}{Date} initial\+\_\+date, \hyperlink{class_date}{Date} final\+\_\+\+Date)
+\begin{DoxyCompactList}\small\item\em display the accomodations that correspond to the restrictions given by the client and asks him to choose onde of them \end{DoxyCompactList}\item 
+void \hyperlink{class_company_aafc4b607edcf5a01500c42c03d1322ad}{add\+Reservation\+Comp} (\hyperlink{class_accomodation}{Accomodation} $\ast$a, \hyperlink{class_date}{Date} init\+\_\+date, \hyperlink{class_date}{Date} final\+\_\+date)
+\begin{DoxyCompactList}\small\item\em adds a reservations to the reservations vector and to the suplier that owns tha accomodation a \end{DoxyCompactList}\item 
+int \hyperlink{class_company_ab3dbac165de998e1e711a6dba7cbbf51}{cancel\+Reservation} ()
+\begin{DoxyCompactList}\small\item\em ask the client wich reservation he wants to to cancel removes it from the vectors and displays the amount that the client must receive \end{DoxyCompactList}\item 
+\hypertarget{class_company_aec3da42cd9c40660c9b6478dfb246109}{}\label{class_company_aec3da42cd9c40660c9b6478dfb246109} 
+void \hyperlink{class_company_aec3da42cd9c40660c9b6478dfb246109}{show\+Reservation} () const
+\begin{DoxyCompactList}\small\item\em asks for the id of the reservation and displays it on the screen \end{DoxyCompactList}\item 
+\hypertarget{class_company_a72134cd31bcd5a1bac08ad8e6235d28f}{}\label{class_company_a72134cd31bcd5a1bac08ad8e6235d28f} 
+void \hyperlink{class_company_a72134cd31bcd5a1bac08ad8e6235d28f}{save\+Changes} () const
+\begin{DoxyCompactList}\small\item\em saves changes of supliers, clients and reservations on the respective files \end{DoxyCompactList}\item 
+\hypertarget{class_company_ae5cc3089ac58af98b1f4a0b3a7d7e7af}{}\label{class_company_ae5cc3089ac58af98b1f4a0b3a7d7e7af} 
+void \hyperlink{class_company_ae5cc3089ac58af98b1f4a0b3a7d7e7af}{save\+Clients\+Changes} () const
+\begin{DoxyCompactList}\small\item\em saves changes in clients file \end{DoxyCompactList}\item 
+\hypertarget{class_company_a0c8230826db8ef8884e06e0fba61800e}{}\label{class_company_a0c8230826db8ef8884e06e0fba61800e} 
+void \hyperlink{class_company_a0c8230826db8ef8884e06e0fba61800e}{save\+Supliers\+Changes} () const
+\begin{DoxyCompactList}\small\item\em saves changes in supliers file \end{DoxyCompactList}\item 
+\hypertarget{class_company_ad9a63c107f1d1c763577961e42aae6c8}{}\label{class_company_ad9a63c107f1d1c763577961e42aae6c8} 
+void \hyperlink{class_company_ad9a63c107f1d1c763577961e42aae6c8}{save\+Reservations\+Changes} () const
+\begin{DoxyCompactList}\small\item\em saves changes in reservtaions file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_company_a50772131ed5edbbcb73bf58dfec71c72}{}\label{class_company_a50772131ed5edbbcb73bf58dfec71c72} 
+\index{Company@{Company}!Company@{Company}}
+\index{Company@{Company}!Company@{Company}}
+\subsubsection{\texorpdfstring{Company()}{Company()}}
+{\footnotesize\ttfamily Company\+::\+Company (\begin{DoxyParamCaption}\item[{string}]{clients\+File,  }\item[{string}]{supliers\+File,  }\item[{string}]{reservations\+File }\end{DoxyParamCaption})}
+
+
+
+constructor for the \hyperlink{class_company}{Company} based on the files provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clients\+File} & file of clients\\
+\hline
+{\em supliers\+File} & file of supliers\\
+\hline
+{\em revervations\+File} & file of reservations \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_company_aafc4b607edcf5a01500c42c03d1322ad}{}\label{class_company_aafc4b607edcf5a01500c42c03d1322ad} 
+\index{Company@{Company}!add\+Reservation\+Comp@{add\+Reservation\+Comp}}
+\index{add\+Reservation\+Comp@{add\+Reservation\+Comp}!Company@{Company}}
+\subsubsection{\texorpdfstring{add\+Reservation\+Comp()}{addReservationComp()}}
+{\footnotesize\ttfamily void Company\+::add\+Reservation\+Comp (\begin{DoxyParamCaption}\item[{\hyperlink{class_accomodation}{Accomodation} $\ast$}]{a,  }\item[{\hyperlink{class_date}{Date}}]{init\+\_\+date,  }\item[{\hyperlink{class_date}{Date}}]{final\+\_\+date }\end{DoxyParamCaption})}
+
+
+
+adds a reservations to the reservations vector and to the suplier that owns tha accomodation a 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & accomodation linked to the reservation to add\\
+\hline
+{\em init\+\_\+date} & check in date\\
+\hline
+{\em final\+\_\+date} & check out date \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_company_ab3dbac165de998e1e711a6dba7cbbf51}{}\label{class_company_ab3dbac165de998e1e711a6dba7cbbf51} 
+\index{Company@{Company}!cancel\+Reservation@{cancel\+Reservation}}
+\index{cancel\+Reservation@{cancel\+Reservation}!Company@{Company}}
+\subsubsection{\texorpdfstring{cancel\+Reservation()}{cancelReservation()}}
+{\footnotesize\ttfamily int Company\+::cancel\+Reservation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ask the client wich reservation he wants to to cancel removes it from the vectors and displays the amount that the client must receive 
+
+\begin{DoxyReturn}{Returns}
+id of the reservation deleeted 
+\end{DoxyReturn}
+\hypertarget{class_company_ae2767e861cbe5ddec7111c2d04878c9f}{}\label{class_company_ae2767e861cbe5ddec7111c2d04878c9f} 
+\index{Company@{Company}!clients\+Inicialization@{clients\+Inicialization}}
+\index{clients\+Inicialization@{clients\+Inicialization}!Company@{Company}}
+\subsubsection{\texorpdfstring{clients\+Inicialization()}{clientsInicialization()}}
+{\footnotesize\ttfamily void Company\+::clients\+Inicialization (\begin{DoxyParamCaption}\item[{string}]{clients\+File }\end{DoxyParamCaption})}
+
+
+
+initializes the vector of clients 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clients\+File} & file of clients \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_company_a2b6d438df8e871898eef5fc5e3e8f761}{}\label{class_company_a2b6d438df8e871898eef5fc5e3e8f761} 
+\index{Company@{Company}!display\+Offers@{display\+Offers}}
+\index{display\+Offers@{display\+Offers}!Company@{Company}}
+\subsubsection{\texorpdfstring{display\+Offers()}{displayOffers()}}
+{\footnotesize\ttfamily \hyperlink{class_accomodation}{Accomodation} $\ast$ Company\+::display\+Offers (\begin{DoxyParamCaption}\item[{string}]{location,  }\item[{\hyperlink{class_date}{Date}}]{initial\+\_\+date,  }\item[{\hyperlink{class_date}{Date}}]{final\+\_\+\+Date }\end{DoxyParamCaption})}
+
+
+
+display the accomodations that correspond to the restrictions given by the client and asks him to choose onde of them 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & location of the accomodations that must be displayed\\
+\hline
+{\em initial\+\_\+date} & check in date\\
+\hline
+{\em final\+\_\+date} & check out date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the accomodation chooe by the client or N\+U\+LL pointer if there is no accomodation that respect the restrictions or if the id that the client chose does no exist 
+\end{DoxyReturn}
+\hypertarget{class_company_a79bf900155922f7d8b8b1f248dcc3313}{}\label{class_company_a79bf900155922f7d8b8b1f248dcc3313} 
+\index{Company@{Company}!reservations\+Inicialization@{reservations\+Inicialization}}
+\index{reservations\+Inicialization@{reservations\+Inicialization}!Company@{Company}}
+\subsubsection{\texorpdfstring{reservations\+Inicialization()}{reservationsInicialization()}}
+{\footnotesize\ttfamily void Company\+::reservations\+Inicialization (\begin{DoxyParamCaption}\item[{string}]{reservations\+File }\end{DoxyParamCaption})}
+
+
+
+initializes the vector reservations and updates the reservations of each suplier 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reservations\+File} & file of reservations \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_company_a5a3e5d5ef3ef991c54de2781d0607c19}{}\label{class_company_a5a3e5d5ef3ef991c54de2781d0607c19} 
+\index{Company@{Company}!supliers\+Inicialization@{supliers\+Inicialization}}
+\index{supliers\+Inicialization@{supliers\+Inicialization}!Company@{Company}}
+\subsubsection{\texorpdfstring{supliers\+Inicialization()}{supliersInicialization()}}
+{\footnotesize\ttfamily void Company\+::supliers\+Inicialization (\begin{DoxyParamCaption}\item[{string}]{supliers\+File }\end{DoxyParamCaption})}
+
+
+
+initializes the vector supliers 
+
+
+\begin{DoxyParams}{Parameters}
+{\em supliers\+File} & file of supliers \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_company_ae09dab4c6a0d26207cdeffd0d5adcf8f}{}\label{class_company_ae09dab4c6a0d26207cdeffd0d5adcf8f} 
+\index{Company@{Company}!verify\+Log\+In\+Cli@{verify\+Log\+In\+Cli}}
+\index{verify\+Log\+In\+Cli@{verify\+Log\+In\+Cli}!Company@{Company}}
+\subsubsection{\texorpdfstring{verify\+Log\+In\+Cli()}{verifyLogInCli()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_client}{Client} $>$\+::iterator Company\+::verify\+Log\+In\+Cli (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+verifies if the username and password of a client are correct 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & username of the client\\
+\hline
+{\em password} & password of the client\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+iterator for the client with the username and password given 
+\end{DoxyReturn}
+\hypertarget{class_company_a9012e0fa84141868a482a0a69b6313af}{}\label{class_company_a9012e0fa84141868a482a0a69b6313af} 
+\index{Company@{Company}!verify\+Log\+In\+Sup@{verify\+Log\+In\+Sup}}
+\index{verify\+Log\+In\+Sup@{verify\+Log\+In\+Sup}!Company@{Company}}
+\subsubsection{\texorpdfstring{verify\+Log\+In\+Sup()}{verifyLogInSup()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_suplier}{Suplier} $>$\+::iterator Company\+::verify\+Log\+In\+Sup (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+verifies if the username and password of a suplier are correct 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & username of the suplier\\
+\hline
+{\em password} & password of the suplier\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+iterator for the suplier with the username and password given 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Company.\+h\item 
+Company.\+cpp\end{DoxyCompactItemize}

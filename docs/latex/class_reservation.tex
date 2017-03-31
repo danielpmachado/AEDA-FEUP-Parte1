@@ -1,0 +1,329 @@
+\hypertarget{class_reservation}{}\section{Reservation Class Reference}
+\label{class_reservation}\index{Reservation@{Reservation}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_reservation_a51a68f9303eb59094dcf1e9e4615095b}{Reservation} (int ID, \hyperlink{class_accomodation}{Accomodation} $\ast$accomodation, \hyperlink{class_date}{Date} check\+IN, \hyperlink{class_date}{Date} check\+O\+UT)
+\begin{DoxyCompactList}\small\item\em reservation constructor with id \end{DoxyCompactList}\item 
+\hyperlink{class_reservation_a91855ef7aad415c89cbfaa7a40208d45}{Reservation} (\hyperlink{class_accomodation}{Accomodation} $\ast$accomodation, \hyperlink{class_date}{Date} check\+IN, \hyperlink{class_date}{Date} check\+O\+UT)
+\begin{DoxyCompactList}\small\item\em reservation constructor \end{DoxyCompactList}\item 
+\hyperlink{class_reservation_ad5e09723db6dd257c532d00d51aa9add}{Reservation} (unsigned int id)
+\begin{DoxyCompactList}\small\item\em reservation constructor with id only \end{DoxyCompactList}\item 
+\hypertarget{class_reservation_a31c13f5d56d55cfa7dd9de82160d48c5}{}\label{class_reservation_a31c13f5d56d55cfa7dd9de82160d48c5} 
+float \hyperlink{class_reservation_a31c13f5d56d55cfa7dd9de82160d48c5}{get\+Total\+Price} () const
+\begin{DoxyCompactList}\small\item\em calculates price based on the number of days of the reservation \end{DoxyCompactList}\item 
+void \hyperlink{class_reservation_a17a9412b83e734b18692d007069e904e}{set\+Accomodation} (\hyperlink{class_accomodation}{Accomodation} $\ast$a)
+\begin{DoxyCompactList}\small\item\em sets accomodation \end{DoxyCompactList}\item 
+void \hyperlink{class_reservation_a2751145be1295ec9c031157dddb2590b}{set\+Check\+IN} (\hyperlink{class_date}{Date} check\+\_\+in)
+\begin{DoxyCompactList}\small\item\em sets check in \end{DoxyCompactList}\item 
+void \hyperlink{class_reservation_a3ecb41a114fa2771f64e8a0486ab7f35}{set\+Check\+O\+UT} (\hyperlink{class_date}{Date} check\+\_\+out)
+\begin{DoxyCompactList}\small\item\em sets check out \end{DoxyCompactList}\item 
+int \hyperlink{class_reservation_a0d411e0681fc74669776df87fb668983}{get\+ID} () const
+\begin{DoxyCompactList}\small\item\em gets id \end{DoxyCompactList}\item 
+void \hyperlink{class_reservation_a81e0f9725cb37ec2abb9669691ca4440}{set\+ID} (unsigned int id)
+\begin{DoxyCompactList}\small\item\em sets id \end{DoxyCompactList}\item 
+\hypertarget{class_reservation_afb750e7efb165312c1b08ba7eda3eb27}{}\label{class_reservation_afb750e7efb165312c1b08ba7eda3eb27} 
+void \hyperlink{class_reservation_afb750e7efb165312c1b08ba7eda3eb27}{set\+ID} ()
+\begin{DoxyCompactList}\small\item\em sets by default \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_reservation_a1a2bec76e916f0bdeedd036093cace9a}{get\+Check\+In} () const
+\begin{DoxyCompactList}\small\item\em gets check In \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_reservation_a74820e32522fcd81b643954314202513}{get\+Check\+Out} () const
+\begin{DoxyCompactList}\small\item\em gets check O\+UT \end{DoxyCompactList}\item 
+\hyperlink{class_accomodation}{Accomodation} $\ast$ \hyperlink{class_reservation_a752912cd2c421712758cd18e0f6335b3}{get\+Accomodation} () const
+\begin{DoxyCompactList}\small\item\em gets accomodation \end{DoxyCompactList}\item 
+float \hyperlink{class_reservation_a5d2e10ceb53e119bede30b6e36d39f4d}{get\+Fee} () const
+\begin{DoxyCompactList}\small\item\em calculates the fee based on the type of the accomodation \end{DoxyCompactList}\item 
+void \hyperlink{class_reservation_aaa4ab6143a49aeb8b4cac348bae44ea2}{save} (ofstream \&out) const
+\begin{DoxyCompactList}\small\item\em saves reservation in rservations file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_reservation_ad4f0df816beef2705e8b1ac555ce6243}{set\+Res\+Last\+ID} (unsigned int id)
+\begin{DoxyCompactList}\small\item\em sets last id \end{DoxyCompactList}\item 
+static unsigned int \hyperlink{class_reservation_ae4d593787bc501a8e4a47ba6b232ff1f}{get\+Last\+ID} ()
+\begin{DoxyCompactList}\small\item\em gets last id \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_reservation_ad08627b6936df4b1b1a5c0351355ffbe}{operator$<$$<$} (ostream \&out, const \hyperlink{class_reservation}{Reservation} \&reserv)
+\begin{DoxyCompactList}\small\item\em displays reservation on the screen \end{DoxyCompactList}\item 
+bool \hyperlink{class_reservation_aedba0fd671214e780c8933b23585b0c9}{operator==} (const \hyperlink{class_reservation}{Reservation} \&acc1, const \hyperlink{class_reservation}{Reservation} \&acc2)
+\begin{DoxyCompactList}\small\item\em compares 2 reservations \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_reservation_a51a68f9303eb59094dcf1e9e4615095b}{}\label{class_reservation_a51a68f9303eb59094dcf1e9e4615095b} 
+\index{Reservation@{Reservation}!Reservation@{Reservation}}
+\index{Reservation@{Reservation}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{Reservation()}{Reservation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Reservation\+::\+Reservation (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{\hyperlink{class_accomodation}{Accomodation} $\ast$}]{accomodation,  }\item[{\hyperlink{class_date}{Date}}]{check\+IN,  }\item[{\hyperlink{class_date}{Date}}]{check\+O\+UT }\end{DoxyParamCaption})}
+
+
+
+reservation constructor with id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & \\
+\hline
+{\em accomodation} & \\
+\hline
+{\em check\+IN} & \\
+\hline
+{\em check\+O\+UT} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_reservation_a91855ef7aad415c89cbfaa7a40208d45}{}\label{class_reservation_a91855ef7aad415c89cbfaa7a40208d45} 
+\index{Reservation@{Reservation}!Reservation@{Reservation}}
+\index{Reservation@{Reservation}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{Reservation()}{Reservation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Reservation\+::\+Reservation (\begin{DoxyParamCaption}\item[{\hyperlink{class_accomodation}{Accomodation} $\ast$}]{accomodation,  }\item[{\hyperlink{class_date}{Date}}]{check\+IN,  }\item[{\hyperlink{class_date}{Date}}]{check\+O\+UT }\end{DoxyParamCaption})}
+
+
+
+reservation constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em accomodation} & \\
+\hline
+{\em check\+IN} & \\
+\hline
+{\em check\+O\+UT} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_reservation_ad5e09723db6dd257c532d00d51aa9add}{}\label{class_reservation_ad5e09723db6dd257c532d00d51aa9add} 
+\index{Reservation@{Reservation}!Reservation@{Reservation}}
+\index{Reservation@{Reservation}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{Reservation()}{Reservation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Reservation\+::\+Reservation (\begin{DoxyParamCaption}\item[{unsigned int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+reservation constructor with id only 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_reservation_a752912cd2c421712758cd18e0f6335b3}{}\label{class_reservation_a752912cd2c421712758cd18e0f6335b3} 
+\index{Reservation@{Reservation}!get\+Accomodation@{get\+Accomodation}}
+\index{get\+Accomodation@{get\+Accomodation}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{get\+Accomodation()}{getAccomodation()}}
+{\footnotesize\ttfamily \hyperlink{class_accomodation}{Accomodation}$\ast$ Reservation\+::get\+Accomodation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets accomodation 
+
+\begin{DoxyReturn}{Returns}
+accomodation pointer 
+\end{DoxyReturn}
+\hypertarget{class_reservation_a1a2bec76e916f0bdeedd036093cace9a}{}\label{class_reservation_a1a2bec76e916f0bdeedd036093cace9a} 
+\index{Reservation@{Reservation}!get\+Check\+In@{get\+Check\+In}}
+\index{get\+Check\+In@{get\+Check\+In}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{get\+Check\+In()}{getCheckIn()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} Reservation\+::get\+Check\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets check In 
+
+\begin{DoxyReturn}{Returns}
+date of check IN 
+\end{DoxyReturn}
+\hypertarget{class_reservation_a74820e32522fcd81b643954314202513}{}\label{class_reservation_a74820e32522fcd81b643954314202513} 
+\index{Reservation@{Reservation}!get\+Check\+Out@{get\+Check\+Out}}
+\index{get\+Check\+Out@{get\+Check\+Out}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{get\+Check\+Out()}{getCheckOut()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} Reservation\+::get\+Check\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets check O\+UT 
+
+\begin{DoxyReturn}{Returns}
+date of check O\+UT 
+\end{DoxyReturn}
+\hypertarget{class_reservation_a5d2e10ceb53e119bede30b6e36d39f4d}{}\label{class_reservation_a5d2e10ceb53e119bede30b6e36d39f4d} 
+\index{Reservation@{Reservation}!get\+Fee@{get\+Fee}}
+\index{get\+Fee@{get\+Fee}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{get\+Fee()}{getFee()}}
+{\footnotesize\ttfamily float Reservation\+::get\+Fee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+calculates the fee based on the type of the accomodation 
+
+\begin{DoxyReturn}{Returns}
+fee 
+\end{DoxyReturn}
+\hypertarget{class_reservation_a0d411e0681fc74669776df87fb668983}{}\label{class_reservation_a0d411e0681fc74669776df87fb668983} 
+\index{Reservation@{Reservation}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int Reservation\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets id 
+
+\begin{DoxyReturn}{Returns}
+ID of the reservation 
+\end{DoxyReturn}
+\hypertarget{class_reservation_ae4d593787bc501a8e4a47ba6b232ff1f}{}\label{class_reservation_ae4d593787bc501a8e4a47ba6b232ff1f} 
+\index{Reservation@{Reservation}!get\+Last\+ID@{get\+Last\+ID}}
+\index{get\+Last\+ID@{get\+Last\+ID}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{get\+Last\+I\+D()}{getLastID()}}
+{\footnotesize\ttfamily static unsigned int Reservation\+::get\+Last\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+gets last id 
+
+\begin{DoxyReturn}{Returns}
+last\+ID 
+\end{DoxyReturn}
+\hypertarget{class_reservation_aaa4ab6143a49aeb8b4cac348bae44ea2}{}\label{class_reservation_aaa4ab6143a49aeb8b4cac348bae44ea2} 
+\index{Reservation@{Reservation}!save@{save}}
+\index{save@{save}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Reservation\+::save (\begin{DoxyParamCaption}\item[{ofstream \&}]{out }\end{DoxyParamCaption}) const}
+
+
+
+saves reservation in rservations file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & reservations file \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_reservation_a17a9412b83e734b18692d007069e904e}{}\label{class_reservation_a17a9412b83e734b18692d007069e904e} 
+\index{Reservation@{Reservation}!set\+Accomodation@{set\+Accomodation}}
+\index{set\+Accomodation@{set\+Accomodation}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{set\+Accomodation()}{setAccomodation()}}
+{\footnotesize\ttfamily void Reservation\+::set\+Accomodation (\begin{DoxyParamCaption}\item[{\hyperlink{class_accomodation}{Accomodation} $\ast$}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets accomodation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_reservation_a2751145be1295ec9c031157dddb2590b}{}\label{class_reservation_a2751145be1295ec9c031157dddb2590b} 
+\index{Reservation@{Reservation}!set\+Check\+IN@{set\+Check\+IN}}
+\index{set\+Check\+IN@{set\+Check\+IN}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{set\+Check\+I\+N()}{setCheckIN()}}
+{\footnotesize\ttfamily void Reservation\+::set\+Check\+IN (\begin{DoxyParamCaption}\item[{\hyperlink{class_date}{Date}}]{check\+\_\+in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets check in 
+
+
+\begin{DoxyParams}{Parameters}
+{\em check\+\_\+in} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_reservation_a3ecb41a114fa2771f64e8a0486ab7f35}{}\label{class_reservation_a3ecb41a114fa2771f64e8a0486ab7f35} 
+\index{Reservation@{Reservation}!set\+Check\+O\+UT@{set\+Check\+O\+UT}}
+\index{set\+Check\+O\+UT@{set\+Check\+O\+UT}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{set\+Check\+O\+U\+T()}{setCheckOUT()}}
+{\footnotesize\ttfamily void Reservation\+::set\+Check\+O\+UT (\begin{DoxyParamCaption}\item[{\hyperlink{class_date}{Date}}]{check\+\_\+out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets check out 
+
+
+\begin{DoxyParams}{Parameters}
+{\em check\+\_\+out} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_reservation_a81e0f9725cb37ec2abb9669691ca4440}{}\label{class_reservation_a81e0f9725cb37ec2abb9669691ca4440} 
+\index{Reservation@{Reservation}!set\+ID@{set\+ID}}
+\index{set\+ID@{set\+ID}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{set\+I\+D()}{setID()}}
+{\footnotesize\ttfamily void Reservation\+::set\+ID (\begin{DoxyParamCaption}\item[{unsigned int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_reservation_ad4f0df816beef2705e8b1ac555ce6243}{}\label{class_reservation_ad4f0df816beef2705e8b1ac555ce6243} 
+\index{Reservation@{Reservation}!set\+Res\+Last\+ID@{set\+Res\+Last\+ID}}
+\index{set\+Res\+Last\+ID@{set\+Res\+Last\+ID}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{set\+Res\+Last\+I\+D()}{setResLastID()}}
+{\footnotesize\ttfamily void Reservation\+::set\+Res\+Last\+ID (\begin{DoxyParamCaption}\item[{unsigned int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+sets last id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_reservation_ad08627b6936df4b1b1a5c0351355ffbe}{}\label{class_reservation_ad08627b6936df4b1b1a5c0351355ffbe} 
+\index{Reservation@{Reservation}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \hyperlink{class_reservation}{Reservation} \&}]{reserv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+displays reservation on the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & cout\\
+\hline
+{\em reserv} & reservation to display\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+out 
+\end{DoxyReturn}
+\hypertarget{class_reservation_aedba0fd671214e780c8933b23585b0c9}{}\label{class_reservation_aedba0fd671214e780c8933b23585b0c9} 
+\index{Reservation@{Reservation}!operator==@{operator==}}
+\index{operator==@{operator==}!Reservation@{Reservation}}
+\subsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_reservation}{Reservation} \&}]{acc1,  }\item[{const \hyperlink{class_reservation}{Reservation} \&}]{acc2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+compares 2 reservations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em acc1} & \\
+\hline
+{\em acc2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the reservations have the same id, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Reservation.\+h\item 
+Reservation.\+cpp\end{DoxyCompactItemize}

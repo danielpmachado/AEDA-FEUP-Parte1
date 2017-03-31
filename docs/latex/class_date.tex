@@ -1,0 +1,358 @@
+\hypertarget{class_date}{}\section{Date Class Reference}
+\label{class_date}\index{Date@{Date}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_date_a5532efafed41fd5f8e013a61313200dc}{Date} (string date)
+\begin{DoxyCompactList}\small\item\em date constructor \end{DoxyCompactList}\item 
+int \hyperlink{class_date_a0f253815240e70f4c39cb93cc68bd3f4}{get\+Day} () const
+\begin{DoxyCompactList}\small\item\em gets day \end{DoxyCompactList}\item 
+int \hyperlink{class_date_a332f6e3a2f6a40d73742b6dab7be0f64}{get\+Month} () const
+\begin{DoxyCompactList}\small\item\em gets month \end{DoxyCompactList}\item 
+int \hyperlink{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}{get\+Year} () const
+\begin{DoxyCompactList}\small\item\em gets year \end{DoxyCompactList}\item 
+void \hyperlink{class_date_a2f97b9d1ac5ef0ef6b6cab3335c5303d}{set\+Day} (int day)
+\begin{DoxyCompactList}\small\item\em sets day \end{DoxyCompactList}\item 
+void \hyperlink{class_date_a23aa56014dd581d691607df5d4474f64}{set\+Month} (int month)
+\begin{DoxyCompactList}\small\item\em sets month \end{DoxyCompactList}\item 
+void \hyperlink{class_date_a895c4ae9868e43577cf59d9c679d7a71}{set\+Year} (int year)
+\begin{DoxyCompactList}\small\item\em sets year \end{DoxyCompactList}\item 
+int \hyperlink{class_date_a8e10a688e6056a4d62a8c5ba5de11e54}{convert\+\_\+date\+\_\+int} () const
+\begin{DoxyCompactList}\small\item\em converts date into an integer \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_ac44b1159cfc6b4936fddd909b0c2a8f1}{leap\+Year} (int year)
+\begin{DoxyCompactList}\small\item\em checks if year is leap \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_ab068a7017e7033adba1680de395c844e}{is\+Leap} (int year)
+\begin{DoxyCompactList}\small\item\em checks if year is leap \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_ac4810ddec014ca51257871abac9667a9}{check\+Date} ()
+\begin{DoxyCompactList}\small\item\em checks if date is valid \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_a5693be8bccd3d4bd431a2cb0ae042d02}{get\+Date} (string date\+\_\+str)
+\begin{DoxyCompactList}\small\item\em checks if date is valid and correctly extracted \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_date_a9aae61020a07731a50cc80927fd8d346}{operator$>$=} (const \hyperlink{class_date}{Date} \&d1, const \hyperlink{class_date}{Date} \&d2)
+\begin{DoxyCompactList}\small\item\em checks if d1 is higher or equal to d2 \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_a4f314b2216e8760eac284385a7eaae12}{operator$<$=} (const \hyperlink{class_date}{Date} \&d1, const \hyperlink{class_date}{Date} \&d2)
+\begin{DoxyCompactList}\small\item\em checks if d1 is less or equal to d2 \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_a5a3f411cbd59e9ecb90b2f8e6aaea551}{operator$<$} (const \hyperlink{class_date}{Date} \&d1, const \hyperlink{class_date}{Date} \&d2)
+\begin{DoxyCompactList}\small\item\em checks if d1 is less than d2 \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_a5c40ea6f65fef5d3e1ed8bec5e16ec41}{operator$>$} (const \hyperlink{class_date}{Date} \&d1, const \hyperlink{class_date}{Date} \&d2)
+\begin{DoxyCompactList}\small\item\em checks if d1 is higher than d2 \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_a18dc8aca1ca4d8cadc2b464db984135b}{operator==} (const \hyperlink{class_date}{Date} \&d1, const \hyperlink{class_date}{Date} \&d2)
+\begin{DoxyCompactList}\small\item\em checks if d1 is equal to d2 \end{DoxyCompactList}\item 
+ostream \& \hyperlink{class_date_a5c29d00ecf33e6d232a410f1f3d6eb70}{operator$<$$<$} (ostream \&out, const \hyperlink{class_date}{Date} \&date)
+\begin{DoxyCompactList}\small\item\em displays date \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_date_a5532efafed41fd5f8e013a61313200dc}{}\label{class_date_a5532efafed41fd5f8e013a61313200dc} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\subsubsection{\texorpdfstring{Date()}{Date()}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{string}]{date }\end{DoxyParamCaption})}
+
+
+
+date constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & in D\+D/\+M\+M/\+Y\+Y\+YY format \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_date_ac4810ddec014ca51257871abac9667a9}{}\label{class_date_ac4810ddec014ca51257871abac9667a9} 
+\index{Date@{Date}!check\+Date@{check\+Date}}
+\index{check\+Date@{check\+Date}!Date@{Date}}
+\subsubsection{\texorpdfstring{check\+Date()}{checkDate()}}
+{\footnotesize\ttfamily bool Date\+::check\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+checks if date is valid 
+
+\begin{DoxyReturn}{Returns}
+true if valid, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_date_a8e10a688e6056a4d62a8c5ba5de11e54}{}\label{class_date_a8e10a688e6056a4d62a8c5ba5de11e54} 
+\index{Date@{Date}!convert\+\_\+date\+\_\+int@{convert\+\_\+date\+\_\+int}}
+\index{convert\+\_\+date\+\_\+int@{convert\+\_\+date\+\_\+int}!Date@{Date}}
+\subsubsection{\texorpdfstring{convert\+\_\+date\+\_\+int()}{convert\_date\_int()}}
+{\footnotesize\ttfamily int Date\+::convert\+\_\+date\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+converts date into an integer 
+
+\begin{DoxyReturn}{Returns}
+integer corresponding to date 
+\end{DoxyReturn}
+\hypertarget{class_date_a5693be8bccd3d4bd431a2cb0ae042d02}{}\label{class_date_a5693be8bccd3d4bd431a2cb0ae042d02} 
+\index{Date@{Date}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!Date@{Date}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}}
+{\footnotesize\ttfamily bool Date\+::get\+Date (\begin{DoxyParamCaption}\item[{string}]{date\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+checks if date is valid and correctly extracted 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date\+\_\+str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if valid, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_date_a0f253815240e70f4c39cb93cc68bd3f4}{}\label{class_date_a0f253815240e70f4c39cb93cc68bd3f4} 
+\index{Date@{Date}!get\+Day@{get\+Day}}
+\index{get\+Day@{get\+Day}!Date@{Date}}
+\subsubsection{\texorpdfstring{get\+Day()}{getDay()}}
+{\footnotesize\ttfamily int Date\+::get\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+gets day 
+
+\begin{DoxyReturn}{Returns}
+day 
+\end{DoxyReturn}
+\hypertarget{class_date_a332f6e3a2f6a40d73742b6dab7be0f64}{}\label{class_date_a332f6e3a2f6a40d73742b6dab7be0f64} 
+\index{Date@{Date}!get\+Month@{get\+Month}}
+\index{get\+Month@{get\+Month}!Date@{Date}}
+\subsubsection{\texorpdfstring{get\+Month()}{getMonth()}}
+{\footnotesize\ttfamily int Date\+::get\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+gets month 
+
+\begin{DoxyReturn}{Returns}
+month 
+\end{DoxyReturn}
+\hypertarget{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}{}\label{class_date_a8b0869f34c2b38d108ab83ee2e770e5d} 
+\index{Date@{Date}!get\+Year@{get\+Year}}
+\index{get\+Year@{get\+Year}!Date@{Date}}
+\subsubsection{\texorpdfstring{get\+Year()}{getYear()}}
+{\footnotesize\ttfamily int Date\+::get\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+gets year 
+
+\begin{DoxyReturn}{Returns}
+year 
+\end{DoxyReturn}
+\hypertarget{class_date_ab068a7017e7033adba1680de395c844e}{}\label{class_date_ab068a7017e7033adba1680de395c844e} 
+\index{Date@{Date}!is\+Leap@{is\+Leap}}
+\index{is\+Leap@{is\+Leap}!Date@{Date}}
+\subsubsection{\texorpdfstring{is\+Leap()}{isLeap()}}
+{\footnotesize\ttfamily bool Date\+::is\+Leap (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+checks if year is leap 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if leap, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_date_ac44b1159cfc6b4936fddd909b0c2a8f1}{}\label{class_date_ac44b1159cfc6b4936fddd909b0c2a8f1} 
+\index{Date@{Date}!leap\+Year@{leap\+Year}}
+\index{leap\+Year@{leap\+Year}!Date@{Date}}
+\subsubsection{\texorpdfstring{leap\+Year()}{leapYear()}}
+{\footnotesize\ttfamily bool Date\+::leap\+Year (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+checks if year is leap 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if leap, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_date_a2f97b9d1ac5ef0ef6b6cab3335c5303d}{}\label{class_date_a2f97b9d1ac5ef0ef6b6cab3335c5303d} 
+\index{Date@{Date}!set\+Day@{set\+Day}}
+\index{set\+Day@{set\+Day}!Date@{Date}}
+\subsubsection{\texorpdfstring{set\+Day()}{setDay()}}
+{\footnotesize\ttfamily void Date\+::set\+Day (\begin{DoxyParamCaption}\item[{int}]{day }\end{DoxyParamCaption})}
+
+
+
+sets day 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_date_a23aa56014dd581d691607df5d4474f64}{}\label{class_date_a23aa56014dd581d691607df5d4474f64} 
+\index{Date@{Date}!set\+Month@{set\+Month}}
+\index{set\+Month@{set\+Month}!Date@{Date}}
+\subsubsection{\texorpdfstring{set\+Month()}{setMonth()}}
+{\footnotesize\ttfamily void Date\+::set\+Month (\begin{DoxyParamCaption}\item[{int}]{month }\end{DoxyParamCaption})}
+
+
+
+sets month 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mont} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_date_a895c4ae9868e43577cf59d9c679d7a71}{}\label{class_date_a895c4ae9868e43577cf59d9c679d7a71} 
+\index{Date@{Date}!set\+Year@{set\+Year}}
+\index{set\+Year@{set\+Year}!Date@{Date}}
+\subsubsection{\texorpdfstring{set\+Year()}{setYear()}}
+{\footnotesize\ttfamily void Date\+::set\+Year (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+sets year 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_date_a5a3f411cbd59e9ecb90b2f8e6aaea551}{}\label{class_date_a5a3f411cbd59e9ecb90b2f8e6aaea551} 
+\index{Date@{Date}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Date@{Date}}
+\subsubsection{\texorpdfstring{operator$<$}{operator<}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_date}{Date} \&}]{d1,  }\item[{const \hyperlink{class_date}{Date} \&}]{d2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+checks if d1 is less than d2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d1} & \\
+\hline
+{\em d2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if d1 is less than d2, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_date_a5c29d00ecf33e6d232a410f1f3d6eb70}{}\label{class_date_a5c29d00ecf33e6d232a410f1f3d6eb70} 
+\index{Date@{Date}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Date@{Date}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \hyperlink{class_date}{Date} \&}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+displays date 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \\
+\hline
+{\em date} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+out 
+\end{DoxyReturn}
+\hypertarget{class_date_a4f314b2216e8760eac284385a7eaae12}{}\label{class_date_a4f314b2216e8760eac284385a7eaae12} 
+\index{Date@{Date}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Date@{Date}}
+\subsubsection{\texorpdfstring{operator$<$=}{operator<=}}
+{\footnotesize\ttfamily bool operator$<$= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_date}{Date} \&}]{d1,  }\item[{const \hyperlink{class_date}{Date} \&}]{d2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+checks if d1 is less or equal to d2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d1} & \\
+\hline
+{\em d2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if d1 is less or equal to d2, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_date_a18dc8aca1ca4d8cadc2b464db984135b}{}\label{class_date_a18dc8aca1ca4d8cadc2b464db984135b} 
+\index{Date@{Date}!operator==@{operator==}}
+\index{operator==@{operator==}!Date@{Date}}
+\subsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_date}{Date} \&}]{d1,  }\item[{const \hyperlink{class_date}{Date} \&}]{d2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+checks if d1 is equal to d2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d1} & \\
+\hline
+{\em d2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if d1 is equal to d2, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_date_a5c40ea6f65fef5d3e1ed8bec5e16ec41}{}\label{class_date_a5c40ea6f65fef5d3e1ed8bec5e16ec41} 
+\index{Date@{Date}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Date@{Date}}
+\subsubsection{\texorpdfstring{operator$>$}{operator>}}
+{\footnotesize\ttfamily bool operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_date}{Date} \&}]{d1,  }\item[{const \hyperlink{class_date}{Date} \&}]{d2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+checks if d1 is higher than d2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d1} & \\
+\hline
+{\em d2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if d1 is higher than d2, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_date_a9aae61020a07731a50cc80927fd8d346}{}\label{class_date_a9aae61020a07731a50cc80927fd8d346} 
+\index{Date@{Date}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Date@{Date}}
+\subsubsection{\texorpdfstring{operator$>$=}{operator>=}}
+{\footnotesize\ttfamily bool operator$>$= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_date}{Date} \&}]{d1,  }\item[{const \hyperlink{class_date}{Date} \&}]{d2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+checks if d1 is higher or equal to d2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d1} & \\
+\hline
+{\em d2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if d1 is higher or equal to d2, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Date.\+h\item 
+Date.\+cpp\end{DoxyCompactItemize}

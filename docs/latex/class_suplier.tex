@@ -1,0 +1,185 @@
+\hypertarget{class_suplier}{}\section{Suplier Class Reference}
+\label{class_suplier}\index{Suplier@{Suplier}}
+Inheritance diagram for Suplier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_suplier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_suplier_a01702f1e6b57b187c8e0ecb06a9b2a4d}{Suplier} (string username, string password, string name, int nif, string adress)
+\begin{DoxyCompactList}\small\item\em creates a new suplier \end{DoxyCompactList}\item 
+\hypertarget{class_suplier_ac95a8bff3f58f427e69d88d8998853f3}{}\label{class_suplier_ac95a8bff3f58f427e69d88d8998853f3} 
+void \hyperlink{class_suplier_ac95a8bff3f58f427e69d88d8998853f3}{add\+Accomodation} ()
+\begin{DoxyCompactList}\small\item\em adds accomodation \end{DoxyCompactList}\item 
+void \hyperlink{class_suplier_a817ef61f9a01bd480073448f1e382061}{add\+Accomodation\+File} (\hyperlink{class_accomodation}{Accomodation} $\ast$acc)
+\begin{DoxyCompactList}\small\item\em adds accomodation from file \end{DoxyCompactList}\item 
+\hypertarget{class_suplier_a0912f635fff680c5a321b45968c9cded}{}\label{class_suplier_a0912f635fff680c5a321b45968c9cded} 
+void \hyperlink{class_suplier_a0912f635fff680c5a321b45968c9cded}{show\+Accomodations} () const
+\begin{DoxyCompactList}\small\item\em shows accomodations \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_accomodation}{Accomodation} $\ast$ $>$ \hyperlink{class_suplier_a87e65aee86b034f1b4a112abb83ff53a}{get\+Accomodations} () const
+\begin{DoxyCompactList}\small\item\em gets accomodations \end{DoxyCompactList}\item 
+void \hyperlink{class_suplier_a9b99e7cbd4cb78a97cad39ffd6d0a691}{set\+Accomodations} (vector$<$ \hyperlink{class_accomodation}{Accomodation} $\ast$$>$ accomodations)
+\begin{DoxyCompactList}\small\item\em sets accomodations \end{DoxyCompactList}\item 
+string \hyperlink{class_suplier_ad6e654f4f26f6268b50f51df117793fb}{get\+Adress} () const
+\begin{DoxyCompactList}\small\item\em gets adress \end{DoxyCompactList}\item 
+void \hyperlink{class_suplier_a35d4dcc54e96c079ac8792806eeed739}{set\+Adress} (string adress)
+\begin{DoxyCompactList}\small\item\em sets adress \end{DoxyCompactList}\item 
+int \hyperlink{class_suplier_ae200d0fc598080361dccfc947dd071c5}{get\+N\+IF} () const
+\begin{DoxyCompactList}\small\item\em gets N\+IF \end{DoxyCompactList}\item 
+void \hyperlink{class_suplier_a91fbf47980aa9c9f3e55d9fcc0320201}{save} (ofstream \&out) const
+\begin{DoxyCompactList}\small\item\em saves suplier in the file \end{DoxyCompactList}\item 
+void \hyperlink{class_suplier_a2449d37d77317ea100c3d2866f8c8556}{add\+Reservation} (\hyperlink{class_reservation}{Reservation} res)
+\begin{DoxyCompactList}\small\item\em adds reservation to the vector of reservations \end{DoxyCompactList}\item 
+\hypertarget{class_suplier_ac455dce8b1768090654c0e5a5e840fb1}{}\label{class_suplier_ac455dce8b1768090654c0e5a5e840fb1} 
+void \hyperlink{class_suplier_ac455dce8b1768090654c0e5a5e840fb1}{show\+Fees} () const
+\begin{DoxyCompactList}\small\item\em displays teh percentage of the fee for each accomodation and the fees to pay for the reservations confirmed \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_suplier_a01702f1e6b57b187c8e0ecb06a9b2a4d}{}\label{class_suplier_a01702f1e6b57b187c8e0ecb06a9b2a4d} 
+\index{Suplier@{Suplier}!Suplier@{Suplier}}
+\index{Suplier@{Suplier}!Suplier@{Suplier}}
+\subsubsection{\texorpdfstring{Suplier()}{Suplier()}}
+{\footnotesize\ttfamily Suplier\+::\+Suplier (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password,  }\item[{string}]{name,  }\item[{int}]{nif,  }\item[{string}]{adress }\end{DoxyParamCaption})}
+
+
+
+creates a new suplier 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+{\em name} & \\
+\hline
+{\em nif} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_suplier_a817ef61f9a01bd480073448f1e382061}{}\label{class_suplier_a817ef61f9a01bd480073448f1e382061} 
+\index{Suplier@{Suplier}!add\+Accomodation\+File@{add\+Accomodation\+File}}
+\index{add\+Accomodation\+File@{add\+Accomodation\+File}!Suplier@{Suplier}}
+\subsubsection{\texorpdfstring{add\+Accomodation\+File()}{addAccomodationFile()}}
+{\footnotesize\ttfamily void Suplier\+::add\+Accomodation\+File (\begin{DoxyParamCaption}\item[{\hyperlink{class_accomodation}{Accomodation} $\ast$}]{acc }\end{DoxyParamCaption})}
+
+
+
+adds accomodation from file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em acc} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_suplier_a2449d37d77317ea100c3d2866f8c8556}{}\label{class_suplier_a2449d37d77317ea100c3d2866f8c8556} 
+\index{Suplier@{Suplier}!add\+Reservation@{add\+Reservation}}
+\index{add\+Reservation@{add\+Reservation}!Suplier@{Suplier}}
+\subsubsection{\texorpdfstring{add\+Reservation()}{addReservation()}}
+{\footnotesize\ttfamily void Suplier\+::add\+Reservation (\begin{DoxyParamCaption}\item[{\hyperlink{class_reservation}{Reservation}}]{res }\end{DoxyParamCaption})}
+
+
+
+adds reservation to the vector of reservations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reservation} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_suplier_a87e65aee86b034f1b4a112abb83ff53a}{}\label{class_suplier_a87e65aee86b034f1b4a112abb83ff53a} 
+\index{Suplier@{Suplier}!get\+Accomodations@{get\+Accomodations}}
+\index{get\+Accomodations@{get\+Accomodations}!Suplier@{Suplier}}
+\subsubsection{\texorpdfstring{get\+Accomodations()}{getAccomodations()}}
+{\footnotesize\ttfamily vector$<$\hyperlink{class_accomodation}{Accomodation}$\ast$$>$ Suplier\+::get\+Accomodations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets accomodations 
+
+\begin{DoxyReturn}{Returns}
+accomodations 
+\end{DoxyReturn}
+\hypertarget{class_suplier_ad6e654f4f26f6268b50f51df117793fb}{}\label{class_suplier_ad6e654f4f26f6268b50f51df117793fb} 
+\index{Suplier@{Suplier}!get\+Adress@{get\+Adress}}
+\index{get\+Adress@{get\+Adress}!Suplier@{Suplier}}
+\subsubsection{\texorpdfstring{get\+Adress()}{getAdress()}}
+{\footnotesize\ttfamily string Suplier\+::get\+Adress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets adress 
+
+\begin{DoxyReturn}{Returns}
+adress 
+\end{DoxyReturn}
+\hypertarget{class_suplier_ae200d0fc598080361dccfc947dd071c5}{}\label{class_suplier_ae200d0fc598080361dccfc947dd071c5} 
+\index{Suplier@{Suplier}!get\+N\+IF@{get\+N\+IF}}
+\index{get\+N\+IF@{get\+N\+IF}!Suplier@{Suplier}}
+\subsubsection{\texorpdfstring{get\+N\+I\+F()}{getNIF()}}
+{\footnotesize\ttfamily int Suplier\+::get\+N\+IF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets N\+IF 
+
+\begin{DoxyReturn}{Returns}
+N\+IF 
+\end{DoxyReturn}
+\hypertarget{class_suplier_a91fbf47980aa9c9f3e55d9fcc0320201}{}\label{class_suplier_a91fbf47980aa9c9f3e55d9fcc0320201} 
+\index{Suplier@{Suplier}!save@{save}}
+\index{save@{save}!Suplier@{Suplier}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Suplier\+::save (\begin{DoxyParamCaption}\item[{ofstream \&}]{out }\end{DoxyParamCaption}) const}
+
+
+
+saves suplier in the file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & supliers file \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_suplier_a9b99e7cbd4cb78a97cad39ffd6d0a691}{}\label{class_suplier_a9b99e7cbd4cb78a97cad39ffd6d0a691} 
+\index{Suplier@{Suplier}!set\+Accomodations@{set\+Accomodations}}
+\index{set\+Accomodations@{set\+Accomodations}!Suplier@{Suplier}}
+\subsubsection{\texorpdfstring{set\+Accomodations()}{setAccomodations()}}
+{\footnotesize\ttfamily void Suplier\+::set\+Accomodations (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{class_accomodation}{Accomodation} $\ast$$>$}]{accomodations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets accomodations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em accomodations} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_suplier_a35d4dcc54e96c079ac8792806eeed739}{}\label{class_suplier_a35d4dcc54e96c079ac8792806eeed739} 
+\index{Suplier@{Suplier}!set\+Adress@{set\+Adress}}
+\index{set\+Adress@{set\+Adress}!Suplier@{Suplier}}
+\subsubsection{\texorpdfstring{set\+Adress()}{setAdress()}}
+{\footnotesize\ttfamily void Suplier\+::set\+Adress (\begin{DoxyParamCaption}\item[{string}]{adress }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets adress 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adress} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+User.\+h\item 
+User.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,182 @@
+\hypertarget{class_user}{}\section{User Class Reference}
+\label{class_user}\index{User@{User}}
+Inheritance diagram for User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_user}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_user_a97b74e31502b096fb30701b8eca44f15}{User} (string username, string password, string name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_user}{User} constructor. \end{DoxyCompactList}\item 
+string \hyperlink{class_user_ab9b2b5feb6bdd1582696eb6d44cee384}{get\+Name} () const
+\item 
+void \hyperlink{class_user_acabf7e5a40909656de5bc631abe5588c}{set\+Name} (string name)
+\begin{DoxyCompactList}\small\item\em changes the name of the user \end{DoxyCompactList}\item 
+string \hyperlink{class_user_a33429bdd1253091697a9c5c5e1448bee}{get\+Password} () const
+\item 
+void \hyperlink{class_user_ab9645a2f4dc87343f9e9aeb408be41ad}{set\+Password} (string password)
+\begin{DoxyCompactList}\small\item\em changes user password \end{DoxyCompactList}\item 
+string \hyperlink{class_user_a82e034043e04b2d750c654c8b2f2ce78}{get\+Username} () const
+\item 
+void \hyperlink{class_user_a0fed77d10cd142ee4112d650ec564e6b}{set\+Username} (string username)
+\begin{DoxyCompactList}\small\item\em changes username \end{DoxyCompactList}\item 
+\hypertarget{class_user_a617552867a7590074ffe76afd9dd8740}{}\label{class_user_a617552867a7590074ffe76afd9dd8740} 
+void \hyperlink{class_user_a617552867a7590074ffe76afd9dd8740}{show\+Reservations} () const
+\begin{DoxyCompactList}\small\item\em shows reservations \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_reservation}{Reservation} $>$ \hyperlink{class_user_ab7b3c2424a2828feb264967c3c13d2cb}{get\+Reservations} () const
+\item 
+\hypertarget{class_user_a042d2deaef710af2fba05abd52367e48}{}\label{class_user_a042d2deaef710af2fba05abd52367e48} 
+void \hyperlink{class_user_a042d2deaef710af2fba05abd52367e48}{set\+Reservations} (vector$<$ \hyperlink{class_reservation}{Reservation} $>$ res)
+\begin{DoxyCompactList}\small\item\em shows reservations \end{DoxyCompactList}\item 
+void \hyperlink{class_user_a8f0bf6f9f7b1ded862b4531404068ade}{delete\+Reservation} (int position)
+\begin{DoxyCompactList}\small\item\em deletes reservations \end{DoxyCompactList}\item 
+bool \hyperlink{class_user_a0881b78e5e9e5040c1f5ecc0e16746b8}{operator==} (const \hyperlink{class_user}{User} \&usr) const
+\begin{DoxyCompactList}\small\item\em equal operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_user_a97b74e31502b096fb30701b8eca44f15}{}\label{class_user_a97b74e31502b096fb30701b8eca44f15} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\subsubsection{\texorpdfstring{User()}{User()}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_user}{User} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_user_a8f0bf6f9f7b1ded862b4531404068ade}{}\label{class_user_a8f0bf6f9f7b1ded862b4531404068ade} 
+\index{User@{User}!delete\+Reservation@{delete\+Reservation}}
+\index{delete\+Reservation@{delete\+Reservation}!User@{User}}
+\subsubsection{\texorpdfstring{delete\+Reservation()}{deleteReservation()}}
+{\footnotesize\ttfamily void User\+::delete\+Reservation (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+
+deletes reservations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_user_ab9b2b5feb6bdd1582696eb6d44cee384}{}\label{class_user_ab9b2b5feb6bdd1582696eb6d44cee384} 
+\index{User@{User}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!User@{User}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string User\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+name of the user 
+\end{DoxyReturn}
+\hypertarget{class_user_a33429bdd1253091697a9c5c5e1448bee}{}\label{class_user_a33429bdd1253091697a9c5c5e1448bee} 
+\index{User@{User}!get\+Password@{get\+Password}}
+\index{get\+Password@{get\+Password}!User@{User}}
+\subsubsection{\texorpdfstring{get\+Password()}{getPassword()}}
+{\footnotesize\ttfamily string User\+::get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+password of the user 
+\end{DoxyReturn}
+\hypertarget{class_user_ab7b3c2424a2828feb264967c3c13d2cb}{}\label{class_user_ab7b3c2424a2828feb264967c3c13d2cb} 
+\index{User@{User}!get\+Reservations@{get\+Reservations}}
+\index{get\+Reservations@{get\+Reservations}!User@{User}}
+\subsubsection{\texorpdfstring{get\+Reservations()}{getReservations()}}
+{\footnotesize\ttfamily vector$<$\hyperlink{class_reservation}{Reservation}$>$ User\+::get\+Reservations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+reservations 
+\end{DoxyReturn}
+\hypertarget{class_user_a82e034043e04b2d750c654c8b2f2ce78}{}\label{class_user_a82e034043e04b2d750c654c8b2f2ce78} 
+\index{User@{User}!get\+Username@{get\+Username}}
+\index{get\+Username@{get\+Username}!User@{User}}
+\subsubsection{\texorpdfstring{get\+Username()}{getUsername()}}
+{\footnotesize\ttfamily string User\+::get\+Username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+username 
+\end{DoxyReturn}
+\hypertarget{class_user_a0881b78e5e9e5040c1f5ecc0e16746b8}{}\label{class_user_a0881b78e5e9e5040c1f5ecc0e16746b8} 
+\index{User@{User}!operator==@{operator==}}
+\index{operator==@{operator==}!User@{User}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool User\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_user}{User} \&}]{usr }\end{DoxyParamCaption}) const}
+
+
+
+equal operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if it went well 
+\end{DoxyReturn}
+\hypertarget{class_user_acabf7e5a40909656de5bc631abe5588c}{}\label{class_user_acabf7e5a40909656de5bc631abe5588c} 
+\index{User@{User}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!User@{User}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void User\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+changes the name of the user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_user_ab9645a2f4dc87343f9e9aeb408be41ad}{}\label{class_user_ab9645a2f4dc87343f9e9aeb408be41ad} 
+\index{User@{User}!set\+Password@{set\+Password}}
+\index{set\+Password@{set\+Password}!User@{User}}
+\subsubsection{\texorpdfstring{set\+Password()}{setPassword()}}
+{\footnotesize\ttfamily void User\+::set\+Password (\begin{DoxyParamCaption}\item[{string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+changes user password 
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_user_a0fed77d10cd142ee4112d650ec564e6b}{}\label{class_user_a0fed77d10cd142ee4112d650ec564e6b} 
+\index{User@{User}!set\+Username@{set\+Username}}
+\index{set\+Username@{set\+Username}!User@{User}}
+\subsubsection{\texorpdfstring{set\+Username()}{setUsername()}}
+{\footnotesize\ttfamily void User\+::set\+Username (\begin{DoxyParamCaption}\item[{string}]{username }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+changes username 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+User.\+h\item 
+User.\+cpp\end{DoxyCompactItemize}

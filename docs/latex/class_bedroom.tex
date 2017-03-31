@@ -1,0 +1,108 @@
+\hypertarget{class_bedroom}{}\section{Bedroom Class Reference}
+\label{class_bedroom}\index{Bedroom@{Bedroom}}
+Inheritance diagram for Bedroom\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bedroom}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bedroom_afd743fa0003f9307e4244c22332e1450}{Bedroom} (float price\+\_\+night, float price\+\_\+week, float price\+\_\+month, string location, vector$<$ pair$<$ \hyperlink{class_date}{Date}, \hyperlink{class_date}{Date} $>$$>$ unvailable\+Dates, establishment est, bedroom\+Type bed\+\_\+type)
+\begin{DoxyCompactList}\small\item\em bedroom constructor \end{DoxyCompactList}\item 
+\hyperlink{class_bedroom_acb17fca3ff7ec73625142fc5360ebfe3}{Bedroom} (unsigned int id, float price\+\_\+night, float price\+\_\+month, float price\+\_\+year, string location, vector$<$ pair$<$ \hyperlink{class_date}{Date}, \hyperlink{class_date}{Date} $>$$>$ unavailable\+Dates, establishment est, bedroom\+Type bed\+\_\+type)
+\begin{DoxyCompactList}\small\item\em bedroom constructor with id \end{DoxyCompactList}\item 
+\hypertarget{class_bedroom_a227bb14fc225b8c872d85c84163735de}{}\label{class_bedroom_a227bb14fc225b8c872d85c84163735de} 
+virtual void \hyperlink{class_bedroom_a227bb14fc225b8c872d85c84163735de}{print} () const
+\begin{DoxyCompactList}\small\item\em prints bedroom on the sreen \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_bedroom_ad5d0a12fe0257ba5c14efc6182ee33ce}{save\+Accomodation} (ofstream \&out)
+\begin{DoxyCompactList}\small\item\em saves bedroom in supliers file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_bedroom_afd743fa0003f9307e4244c22332e1450}{}\label{class_bedroom_afd743fa0003f9307e4244c22332e1450} 
+\index{Bedroom@{Bedroom}!Bedroom@{Bedroom}}
+\index{Bedroom@{Bedroom}!Bedroom@{Bedroom}}
+\subsubsection{\texorpdfstring{Bedroom()}{Bedroom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bedroom\+::\+Bedroom (\begin{DoxyParamCaption}\item[{float}]{price\+\_\+night,  }\item[{float}]{price\+\_\+week,  }\item[{float}]{price\+\_\+month,  }\item[{string}]{location,  }\item[{vector$<$ pair$<$ \hyperlink{class_date}{Date}, \hyperlink{class_date}{Date} $>$$>$}]{unvailable\+Dates,  }\item[{establishment}]{est,  }\item[{bedroom\+Type}]{bed\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+bedroom constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em price\+\_\+night} & \\
+\hline
+{\em price\+\_\+week} & \\
+\hline
+{\em price\+\_\+month} & \\
+\hline
+{\em location} & \\
+\hline
+{\em unavailable\+\_\+dates} & \\
+\hline
+{\em est} & type of establishment\\
+\hline
+{\em bed\+\_\+type} & type of bedroom \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_bedroom_acb17fca3ff7ec73625142fc5360ebfe3}{}\label{class_bedroom_acb17fca3ff7ec73625142fc5360ebfe3} 
+\index{Bedroom@{Bedroom}!Bedroom@{Bedroom}}
+\index{Bedroom@{Bedroom}!Bedroom@{Bedroom}}
+\subsubsection{\texorpdfstring{Bedroom()}{Bedroom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bedroom\+::\+Bedroom (\begin{DoxyParamCaption}\item[{unsigned int}]{id,  }\item[{float}]{price\+\_\+night,  }\item[{float}]{price\+\_\+month,  }\item[{float}]{price\+\_\+year,  }\item[{string}]{location,  }\item[{vector$<$ pair$<$ \hyperlink{class_date}{Date}, \hyperlink{class_date}{Date} $>$$>$}]{unavailable\+Dates,  }\item[{establishment}]{est,  }\item[{bedroom\+Type}]{bed\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+bedroom constructor with id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em price\+\_\+night} & \\
+\hline
+{\em price\+\_\+week} & \\
+\hline
+{\em price\+\_\+month} & \\
+\hline
+{\em location} & \\
+\hline
+{\em unavailable\+\_\+dates} & \\
+\hline
+{\em est} & type of establishment\\
+\hline
+{\em bed\+\_\+type} & type of bedroom \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_bedroom_ad5d0a12fe0257ba5c14efc6182ee33ce}{}\label{class_bedroom_ad5d0a12fe0257ba5c14efc6182ee33ce} 
+\index{Bedroom@{Bedroom}!save\+Accomodation@{save\+Accomodation}}
+\index{save\+Accomodation@{save\+Accomodation}!Bedroom@{Bedroom}}
+\subsubsection{\texorpdfstring{save\+Accomodation()}{saveAccomodation()}}
+{\footnotesize\ttfamily void Bedroom\+::save\+Accomodation (\begin{DoxyParamCaption}\item[{ofstream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+saves bedroom in supliers file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & supliers file \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_accomodation_a4394eb907b2d5a23faf73dd03c1dac4d}{Accomodation}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Accomodation.\+h\item 
+Accomodation.\+cpp\end{DoxyCompactItemize}

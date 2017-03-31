@@ -1,0 +1,95 @@
+\hypertarget{class_client}{}\section{Client Class Reference}
+\label{class_client}\index{Client@{Client}}
+Inheritance diagram for Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_client}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_client_a94e6ab94b8ad2252cc26f3763ec0e253}{Client} (string username, string password, string name, int points=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_client}{Client} constructor. \end{DoxyCompactList}\item 
+int \hyperlink{class_client_aa3824f589da51dc537ccab1bcfcc8e85}{get\+Points} () const
+\begin{DoxyCompactList}\small\item\em gets points \end{DoxyCompactList}\item 
+void \hyperlink{class_client_a029f358b9ebb7afbf7ae30e076243b53}{add\+Reservation} (\hyperlink{class_reservation}{Reservation} res)
+\begin{DoxyCompactList}\small\item\em adds a reservations to the vector reservations and increments the points based on the price \end{DoxyCompactList}\item 
+void \hyperlink{class_client_a2a03ca4558efd182ea5d76dfcec24ecb}{save} (ofstream \&out) const
+\begin{DoxyCompactList}\small\item\em saves client uin the file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_client_a94e6ab94b8ad2252cc26f3763ec0e253}{}\label{class_client_a94e6ab94b8ad2252cc26f3763ec0e253} 
+\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\subsubsection{\texorpdfstring{Client()}{Client()}}
+{\footnotesize\ttfamily Client\+::\+Client (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password,  }\item[{string}]{name,  }\item[{int}]{points = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_client}{Client} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+{\em name} & \\
+\hline
+{\em points,default} & 0 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_client_a029f358b9ebb7afbf7ae30e076243b53}{}\label{class_client_a029f358b9ebb7afbf7ae30e076243b53} 
+\index{Client@{Client}!add\+Reservation@{add\+Reservation}}
+\index{add\+Reservation@{add\+Reservation}!Client@{Client}}
+\subsubsection{\texorpdfstring{add\+Reservation()}{addReservation()}}
+{\footnotesize\ttfamily void Client\+::add\+Reservation (\begin{DoxyParamCaption}\item[{\hyperlink{class_reservation}{Reservation}}]{res }\end{DoxyParamCaption})}
+
+
+
+adds a reservations to the vector reservations and increments the points based on the price 
+
+
+\begin{DoxyParams}{Parameters}
+{\em res} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_client_aa3824f589da51dc537ccab1bcfcc8e85}{}\label{class_client_aa3824f589da51dc537ccab1bcfcc8e85} 
+\index{Client@{Client}!get\+Points@{get\+Points}}
+\index{get\+Points@{get\+Points}!Client@{Client}}
+\subsubsection{\texorpdfstring{get\+Points()}{getPoints()}}
+{\footnotesize\ttfamily int Client\+::get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets points 
+
+\begin{DoxyReturn}{Returns}
+po0ints 
+\end{DoxyReturn}
+\hypertarget{class_client_a2a03ca4558efd182ea5d76dfcec24ecb}{}\label{class_client_a2a03ca4558efd182ea5d76dfcec24ecb} 
+\index{Client@{Client}!save@{save}}
+\index{save@{save}!Client@{Client}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Client\+::save (\begin{DoxyParamCaption}\item[{ofstream \&}]{out }\end{DoxyParamCaption}) const}
+
+
+
+saves client uin the file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & cleints file \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+User.\+h\item 
+User.\+cpp\end{DoxyCompactItemize}
